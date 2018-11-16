@@ -1,0 +1,69 @@
+# @author: zhongjin
+# @date: 20170413
+# should be linked to ~/.config/terminator/config
+
+[global_config]
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  always_split_with_profile = True
+  suppress_multiple_term_dialog = True
+  inactive_color_offset = 1.0
+  handle_size = -1
+  tab_position = top # we must show tabbar; it's distinguish with titlebar.
+  disable_real_transparency = True
+  title_transmit_bg_color = "#3e3838"
+  title_transmit_fg_color = "#000000"
+  title_use_system_font = False
+  title_font = Monospace 12
+[keybindings]
+  # Ctrl+Shift+E vertical split window
+  # Ctrl+Shift+O horizon split window
+  prev_tab = <Alt>h # switch between tabs
+  next_tab = <Alt>l
+  switch_to_tab_1 = <Alt>1 # swith to tab1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_9 = <Alt>9
+  go_up = <Super><Shift>k # switch terminal in a tab
+  go_down = <Super><Shift>j
+  go_right = <Super><Shift>l
+  go_left = <Super><Shift>h
+  resize_up = <Ctrl><Shift>k # resize terminal in a tab
+  resize_down = <Ctrl><Shift>j
+  resize_right = <Ctrl><Shift>l
+  resize_left = <Ctrl><Shift>h
+  # if the binding-key you want to use has been assigned to the other function,
+  # you must reassgin that function another key then you can use this binding-key.
+  toggle_zoom = <Ctrl><Shift>w # extend/scale terminal to full tab
+  close_term = <Ctrl><Shift>q # close terminal in a tab
+  close_window = <Ctrl><Shift>z # close terminator
+[profiles]
+  [[default]]
+    palette = "#000000:#5a8e1c:#2d5f5f:#cdcd00:#1e90ff:#cd00cd:#00cdcd:#e5e5e5:#4c4c4c:#868e09:#00ff00:#ffff00:#4682b4:#ff00ff:#00ffff:#ffffff"
+    background_color = "#0a4343"
+    background_darkness = 0.00
+    background_type = "image"
+    background_image = '/home/f2/Pictures/Wallpapers/debian.jpg'
+    foreground_color = "#eee9e9"
+    cursor_color = "orange" # or else use foreground_color
+    cursor_blink = True
+    scroll_background = False
+    scrollback_lines = 3000
+    use_system_font = False
+    font = Monospace 20
+    show_titlebar = False # we dont want that red-ugly bar
+    copy_on_selection = False # copy when I click copy
+    #http_proxy = http://localhost:1803
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 1024, 680
+[plugins]

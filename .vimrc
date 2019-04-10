@@ -26,6 +26,9 @@ Plug 'rking/ag.vim'
 " no trailing-whitespace
 Plug 'bronson/vim-trailing-whitespace'
 
+" align
+Plug 'junegunn/vim-easy-align'
+
 " quick move
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-expand-region'

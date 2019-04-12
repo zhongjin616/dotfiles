@@ -4,8 +4,8 @@ let g:plug_timeout = 100
 
 " add your plugs && make sure you use single quotes
 " code completion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer' }
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer' }
+" Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'nsf/gocode'
 
 " snippet
@@ -40,6 +40,11 @@ Plug 'kien/rainbow_parentheses.vim' "mark nest parentheses with diff color
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
 Plug 'junegunn/seoul256.vim'
+
+" status
+Plug 'vim-airline/vim-airline'
+" Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter' " show ~+- if code modified
 
 " language specified
 Plug 'fatih/vim-go'

@@ -73,7 +73,8 @@ set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
 set backspace=2                                              " Fix broken backspace in some setups
 set backupcopy=yes                                           " see :help crontab
-set clipboard=unnamed                                        " yank and paste with the system clipboard
+"set clipboard=unnamed                                        " yank and paste with the x-11 primary-selection
+set clipboard=unnamedplus                                    " yank and paste with the system clipboard
 set directory-=.                                             " don't store swapfiles in the current directory
 set encoding=utf-8
 set ignorecase                                               " case-insensitive search
